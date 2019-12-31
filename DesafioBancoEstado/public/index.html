@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="AppIceAndFire"> <!-- es el contexto cofigurado en del index public  -->
+<head>
+    <script src="angular.js"></script>
+    <script src="angular-ui-router.js"></script>
+    <script src="index.js"></script>
+    <title>Juego de Tronos</title>
+</head>
+<body>
+<h1>juego de Trono</h1>
+<a ui-sref="casas">casas</a> <!-- casas y personajes son los estados definidos en el config del index.js -->
+<a ui-sref="personajes">personajes</a>
+<div ui-view></div> <!-- insertar el html asociado a cada estado   aquie se encuentra el casas y personahes como html-->
+</body>
+</html>
